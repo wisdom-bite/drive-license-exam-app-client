@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egzamin teoretyczny na prawo jazdy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="styles/img/samochodzik.jpg">
+    <link rel="apple-touch-icon" href="styles/img/samochodzik.jpg">
+    <link rel="icon" type="image/x-icon" href="styles/img/samochodzik.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/queries/homePageQueries.css">
+</head>
+<body>
+    <div class="row">
+
+        <div class="home-page-header">
+            <h1>Egzamin teoretyczny na prawo jazdy</h1>
+            <h1>Pełna baza pytań pochodzi z oficjalnej strony <a href="https://www.gov.pl/web/infrastruktura/prawo-jazdy" target="_blank">Ministerstwa Infrastruktury</a></h1>
+        </div>
+
+        <div class="home-page-btns">
+            <button onclick="openInfoPopup()" class="btn exam-mode"><ion-icon name="reader-outline"></ion-icon>Egzamin</button>
+            <button onclick="openInfoPopup()" class="btn learning-mode" disabled><ion-icon name="extension-puzzle-outline"></ion-icon>Tryb nauki</button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p><ion-icon name="logo-github"></ion-icon><a href="https://github.com/wisdom-bite/drive-license-exam-app-client" target="_blank">Github repo</a></p>
+                <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:rprogrammer97@gmail.com">Contact me</a></p>
+                <p><ion-icon name="logo-linkedin"></ion-icon><a href="" target="_blank">LinkedIn</a></p>
+            </div>
+        </footer>
+
+        <div class="popup-info">
+
+            <h4>Egzamin</h4>
+    
+            <p>Egzamin teoretyczny składa się z 32 pytań:</p>
+            <ul>
+                <li>20 pytań z wiedzy podstawowej, na które odpowiadasz <strong>TAK</strong> lub <strong>NIE</strong></li>
+                <li>12 pytań z wiedzy specjalistycznej dotyczącej zdawanej kategorii prawa jazdy, na które odpowiadasz wybierając odpowiedź <strong>A</strong>, <strong>B</strong> lub <strong>C</strong></li>
+            </ul>
+                    
+            <p>Poszczególne pytania posiadają wartość punktową uzależnioną od ich stopnia trudności. Część podstawowa zawiera:</p>
+            <ul>
+                <li>10 pytań za 3 punkty</li>
+                <li>6 pytań za 2 punkty</li>
+                <li>4 pytania za 1 punkt</li>
+            </ul>
+    
+            <p>Część specjalistyczna (na poszczególne kategorie) zawiera:</p>
+            <ul>
+                <li>6 pytań za 3 punkty</li>
+                <li>4 pytania za 2 punkty</li>
+                <li>2 pytania za 1 punkt</li>
+            </ul>
+    
+            <p>Ile masz czasu na udzielenie odpowiedzi?</p>
+            <ul>
+                <li>część podstawowa: 20 sekund na zapoznanie się z treścią pytania i 15 sekund na udzielenie odpowiedzi</li>
+                <li>część specjalistyczna: 50 sekund na zapoznanie się z pytaniem i udzielenie odpowiedzi</li>
+            </ul>
+    
+            <p>
+                Nieudzielenie odpowiedzi w wymaganym czasie lub udzielenie błędnej odpowiedzi, skutkuje nieotrzymaniem punktów za dane pytanie. 
+                Twoim zadaniem jest zdobycie co najmniej 68 z 74 możliwych do uzyskania punktów za poprawnie udzielone odpowiedzi.
+            </p>
+    
+            <a href="https://info-car.pl/new/prawo-jazdy/informacje-o-egzaminie-teoretycznym" target="_blank"><ion-icon name="globe-outline"></ion-icon>Więcej informacji</a>
+            
+            <select class="select-category" required>
+                <option value="" selected disabled>Wybierz kategorię</option>
+            </select>
+
+            <div class="popup-btns">
+                <button class="confirm-start-exam btn">Rozpocznij</button>
+                <button onclick="closeInfoPopup()" class="btn close-popup">Wyjdź</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/homePageScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

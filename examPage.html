@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egzamin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="styles/img/samochodzik.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/examPage.css">
+    <link rel="stylesheet" href="styles/queries/examPageQueries.css">
+</head>
+<body>
+
+        <div class="exam-row">
+
+            <div class="main-container">
+    
+                <div class="primary-panel">
+    
+                    <div class="header-panel">
+                        <div>
+                            <p class="blue-box-txt">Wartość punktowa</p>
+                            <p class="blue-box score-value"></p>
+                        </div>
+                        <div>
+                            <p class="blue-box-txt">Aktualna kategoria</p>
+                            <p class="blue-box category-value"></p>
+                        </div>
+                        <div>
+                            <p class="blue-box-txt">Czas do końca egzaminu</p>
+                            <p class="blue-box main-exam-time-countdown" onmousedown='return false;' onselectstart='return false;'>25:00</p>
+                        </div>
+                    </div>
+    
+                    <div class="question-panel">
+    
+                        <img src="" alt="pic" class="question-media-img">
+    
+                        <video class="question-media-video" autoplay="autoplay" muted defaultmuted playsinline>
+                            <source src="" type="video/mp4">
+                        </video>
+        
+                        <h4 class="question-text"></h4>
+        
+                        <div class="js-answers-yn">
+                            <input type="radio" name="answer-yn" value="T" id="idY"><label class="lblY" for="idY" onmousedown='return false;' onselectstart='return false;'>TAK</label>
+                            <input type="radio" name="answer-yn" value="N" id="idN"><label class="lblN" for="idN" onmousedown='return false;' onselectstart='return false;'>NIE</label>
+                        </div>
+                    
+                        <div class="js-answers-abc">
+                            <input type="radio" name="answer-abc" value="A" id="idA"><label class="a" for="idA" onmousedown='return false;' onselectstart='return false;'></label>
+                            <input type="radio" name="answer-abc" value="B" id="idB"><label class="b" for="idB" onmousedown='return false;' onselectstart='return false;'></label>
+                            <input type="radio" name="answer-abc" value="C" id="idC"><label class="c" for="idC" onmousedown='return false;' onselectstart='return false;'></label>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+                <div class="navi-panel">
+    
+                    <button onclick="openInfoPopup()" class="btn exit-exam">Zakończ egzamin</button>
+    
+                    <div class="exam-quest-type-counters">
+                        <div class="exam-page-quest-counter">
+                            <p class="blue-box-txt">Pytanie podstawowe</p>
+                            <p class="blue-box basic-questions-count"></p>
+                        </div>
+                        <div class="exam-page-quest-counter">
+                            <p class="blue-box-txt">Pytanie specjalistyczne</p>
+                            <p class="blue-box spec-questions-count"></p>
+                        </div>
+                    </div>
+    
+                    <div class="time-bar">
+                        <button class="skip-reading btn">Start</button>
+                        <div class="time-progress">
+                            <p class="countdown-value"></p>
+                            <div class="progress-inner"></div>
+                        </div>
+                    </div>
+    
+                    <button class="next-question btn">Następne pytanie</button>
+    
+                </div>
+    
+    
+            </div>
+    
+            <!-- popup -->
+            
+            <div class="popup-info">
+        
+                <h4>Uwaga!!!</h4>
+                <p>Czy na pewno chcesz zakończyć egzamin? Postęp zostanie utracony.</p>
+                <div class="popup-btns">
+                    <button class="close-exam-confirm btn">Zakończ</button>
+                    <button onclick="closeInfoPopup()" class="btn">Wróć do egzaminu</button>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    <script src="scripts/examScript.js"></script>
+
+</body>
+</html>

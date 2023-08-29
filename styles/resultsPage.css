@@ -1,0 +1,278 @@
+/* RESULTS PAGE */
+
+/* video display */
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-fullscreen-button{
+    display: none;
+}
+
+video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, transparent) !important;
+}
+
+video{
+    pointer-events: none;
+ }
+
+/* ----- */
+.exam-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue-box{
+    background-color: #0275d8;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 8rem;
+}
+
+.result-page-header{
+    margin-top: 1.5rem;
+}
+
+.dynamic-div-question-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.summary-info-popup{
+    width: 40rem;
+    background: #0275d8;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+.summary-info-popup button{
+    margin-top: 2rem;
+}
+
+.display-results-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.summary-info{
+    text-align: center;
+    flex: 1;
+    background-color: #0275d8;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    color: #f7f7f7;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    font-size: 1.5rem;
+}
+
+.summary-boxes-btns{
+    flex: 3;
+    margin-left: 2rem;
+}
+
+.exam-result p{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.exam-result,
+.summary-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-boxes{
+    flex-wrap: wrap;
+}
+
+.summary-box{
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: 4rem;
+    cursor: pointer;
+    flex: 0 0 calc(6.25% - 0.3rem);
+    margin: 0;
+    margin-bottom: 0.3rem;
+    padding: 0.7rem 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sb-red{
+    background-color: #d9534f;
+}
+
+.sb-green{
+    background-color: #5cb85c;
+}
+
+.question-media-img-result,
+.question-media-video-result{
+    display: none;
+    width: 100%;
+}
+
+.exit-btn,
+.try-again-btn,
+.display-summary-info-btn{
+    width: 20rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.result-left{
+    flex: 3;
+}
+
+.result-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem;
+
+}
+
+
+.question-content-txt{
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+}
+
+.yn,
+.abc,
+.quest-score{
+    display: none;
+}
+
+.yn,
+.quest-score{
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    align-items: center;
+}
+
+.yn{
+    justify-content: space-evenly;
+}
+
+.yes,
+.no,
+.a,
+.b,
+.c{
+    border-radius: 0.3rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.quest-score p{
+    font-size: 1.75rem;
+}
+
+.quest-score,
+.answers-content{
+    margin-bottom: 5rem;
+}
+
+.answer-box{
+    color: black;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.marked{
+    color: white;
+}
+
+.display-summary-info-btn{
+    display: none;
+}
+
+.lgl-div{
+    text-align: center;
+}
+
+.lgl-info{
+    font-size: 2rem;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+}
+
+.display-lgl-info{
+    visibility: visible;
+}
+
+.lgl-info-txt{
+    font-size: 1.5rem;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 1rem;
+}
+
+.lgl-info-popup{
+    background-color: #0275d8;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 2rem;
+    z-index: 3;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.lgl-info-popup button{
+    font-size: 1.75rem;
+    padding: 0.5rem;
+    width: 80%;
+    height: 4rem;
+}
+
+.open-lgl-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* placeholder info */
+.placeholder-info{
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110rem;
+    
+}
+
+.placeholder-info h1{
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1220px){
+    .navi-panel .blue-box-txt{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    .exam-row{
+        margin: 0 0.5rem;
+    }
+
+    .primary-panel .blue-box-txt{
+        margin-right: 1rem;
+    }
+
+    .navi-panel .blue-box-txt{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 821px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .navi-panel{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 80rem;
+    }
+
+    .primary-panel{
+        margin: 0 auto;
+    }
+
+    .exam-quest-type-counters{
+        margin-bottom: 1rem;
+    }
+
+    .next-question{
+        margin-top: 1rem;
+    }
+
+    .question-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .header-panel{
+        flex-direction: column;
+        margin-top: 0.3rem;
+    }
+
+    .header-panel div{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+
+    .blue-box-txt,
+    .blue-box{
+        font-size: 1.2rem;
+    }
+
+    .blue-box{
+        padding: 1rem;
+    }
+
+    .js-answers-yn{
+        justify-content: space-around;
+    }
+
+    .question-text,
+    .js-answers-yn label{
+        font-size: 1.5rem
+    }
+
+    .navi-panel{
+        width: 40rem;
+    }
+
+    .popup-info{
+        width: 40rem;
+        padding: 0 2rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 394px){
+    .navi-panel,
+    .primary-panel{
+        width: 100%;
+    }
+
+    html, body{
+        font-size: 9px;
+        font-family: 'Lato';
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 281px){
+    .navi-panel,
+    .primary-panel{
+        width: 95%;
+    }
+
+    .js-answers-yn{
+        width: 27rem;
+    }
+
+    .blue-box-txt{
+        font-size: 1rem;
+    }
+
+    .blue-box{
+        padding: 0.5rem;
+    }
+
+    .question-text{
+        font-size: 1.35rem;
+    }
+
+    .popup-info{
+        width: 26rem;
+        padding: 0 1rem 1rem;
+    }
+
+    .popup-info h4{
+        font-size: 2rem;
+        margin: 1rem 0 0.5rem ;
+    }
+}

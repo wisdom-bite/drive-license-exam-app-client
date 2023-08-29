@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1155px){
+    .summary-info{
+        display: none;
+    }
+
+    .display-summary-info-btn{
+        display: block;
+    }
+
+    .summary-boxes-btns{
+        margin-left: 0;
+    }
+
+    .question-content-txt{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    html, body{
+        font-size: 8px;
+    }
+
+    .row{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 821px){
+    .lgl-info{
+        width: 20rem;
+    }
+
+    .dynamic-div-question-content{
+        flex-direction: column;
+    }
+
+    .question-content-txt{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    html, body{
+        font-size: 9px;
+    }
+
+    .quest-score{
+        margin-bottom: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .quest-score p{
+        margin-right: 0.5rem;
+    }
+
+    .blue-box{
+        width: 4rem;
+    }
+
+    .placeholder-info{
+        width: 81rem;
+    }
+
+    .placeholder-info h1{
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 415px){
+    .summary-box{
+        flex: 0 0 calc(12.5% - 0.3rem);
+    }
+
+    .summary-boxes-btns{
+        width: 40rem;
+    }
+
+    .exit-btn,
+    .try-again-btn,
+    .display-summary-info-btn{
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+
+    .summary-info-popup,
+    .lgl-info-txt{
+        font-size: 2rem;
+    }
+
+    .lgl-info-popup{
+        width: 40rem;
+    }
+
+    .placeholder-info{
+        width: 41rem;
+    }
+    
+    .placeholder-info h1{
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 281px){
+    .placeholder-info{
+        width: 28rem;
+    }
+    
+    .placeholder-info h1{
+        font-size: 2rem;
+    }
+}

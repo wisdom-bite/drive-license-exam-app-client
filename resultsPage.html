@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="styles/img/samochodzik.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resultsPage.css">
+    <link rel="stylesheet" href="styles/queries/resutlsPageQueries.css">
+    <title>Wynik egzaminu</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="exam-header result-page-header">
+
+            <div class="summary-info" onmousedown="return false" onselectstart="return false">
+    
+                <div class="exam-result">
+                    <p>Liczba uzyskanych punktów:</p>
+                    <p class="score"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Wynik egzaminu:</p>
+                    <p class="exam-result-verbatim"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba poprawnych odpowiedzi:</p>
+                    <p class="correct-count-verbatim"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba błędnych odpowiedzi:</p>
+                    <p class="wrong-count-verbatim"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba pominiętych odpowiedzi:</p>
+                    <p class="skip-count-verbatim"></p>
+                </div>
+        
+            </div>
+
+            <div class="summary-info-popup" id="popupResults">
+
+                <div class="exam-result">
+                    <p>Liczba uzyskanych punktów:</p>
+                    <p class="score2"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Wynik egzaminu:</p>
+                    <p class="exam-result-verbatim2"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba poprawnych odpowiedzi:</p>
+                    <p class="correct-count-verbatim2"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba błędnych odpowiedzi:</p>
+                    <p class="wrong-count-verbatim2"></p>
+                </div>
+        
+                <div class="exam-result">
+                    <p>Liczba pominiętych odpowiedzi:</p>
+                    <p class="skip-count-verbatim2"></p>
+                </div>
+
+                <button class="btn" type="button" onclick="closePopupResults()">Zamknij</button>
+
+            </div>
+
+            <div class="summary-boxes-btns">
+                <div class="summary-boxes" onmousedown="return false" onselectstart="return false"></div>
+                <div class="exam-header">
+                    <button class="btn exit-btn">Wyjdź</button>
+                    <button class="btn try-again-btn">Spróbuj ponownie</button>
+                    <button class="btn display-summary-info-btn" onclick="displayPopupResults()">Pokaż wynik</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="placeholder-info">
+            <h1>Wybierz numer pytania, aby zobaczyć szczegóły</h1>
+        </div>
+    
+        <div class="dynamic-div-question-content">
+    
+            <div class="result-left">
+                <img src="" class="question-media-img-result">
+    
+                <video class="question-media-video-result" autoplay="autoplay" loop="loop" muted defaultmuted playsinline>
+                    <source src="" type="video/mp4">
+                </video>
+        
+                <h4 class="question-content-txt" onmousedown="return false" onselectstart="return false"></h4>
+            </div>
+
+            <div class="result-right">
+
+                <div class="quest-score">
+                    <!-- 5% -->
+                    <p>Wartość punktowa</p>
+                    <p class="blue-box score-value"></p>
+                </div>
+
+                <div class="answers-content">
+                    <!-- 45% -->
+                    <div class="yn">
+                        <p class="yes answer-box">TAK</p>
+                        <p class="no answer-box">NIE</p>
+                    </div>
+    
+                    <div class="abc">
+                        <p class="a answer-box"></p>
+                        <p class="b answer-box"></p>
+                        <p class="c answer-box"></p>
+                    </div>
+                </div>
+
+                <div class="lgl-div">
+                    <button class="btn lgl-info" onclick="openLglPopup()">
+                        Podstawa prawna
+                    </button>
+                </div>
+
+                <div class="lgl-info-popup" id="lglPopup">
+                    <p class="lgl-info-txt"></p>
+                    <button class="btn" type="button" onclick="closeLglPopup()">Zamknij</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="scripts/resultsPageScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

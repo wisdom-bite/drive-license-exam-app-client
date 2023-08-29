@@ -1,0 +1,20 @@
+.error-info{
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100rem;
+    
+}
+
+.error-info h1{
+    margin-bottom: 1.5rem;
+}
+
+.error-info button{
+    width: 30rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+}

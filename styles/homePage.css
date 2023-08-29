@@ -1,0 +1,104 @@
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-page-header{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+/* buttons */
+.home-page-btns,
+.popup-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.exam-mode,
+.learning-mode{
+    width: 25rem;
+    font-size: 1.75rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+/* homepage popup */
+.select-category{
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    background-color: #f0ad4e;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.popup-info{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid #b3b3b3;
+    background: white;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 3rem 3rem;
+    visibility: hidden;
+    transition: trasform 0.4s, top 0.4s ;
+}
+
+/* js auto class */
+.open-info-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+/* --- */
+
+.popup-info h4{
+    font-size: 3rem;
+    margin: 3rem 0 1rem ;
+    text-align: center;
+}
+
+.popup-info p,
+.popup-info li,
+.popup-info a,
+.popup-info strong{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.popup-info button{
+    width: 25rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 2rem auto;
+}
+
+/* footer */
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #829695;
+    margin-bottom: 1rem;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #829695
+}
